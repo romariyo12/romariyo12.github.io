@@ -5,10 +5,25 @@ body {
 .jumbotron {
   padding-top: 5rem;
   background-color: rgb(248, 212, 8);
+  font-family: "Bungee Shade", cursive;
 }
 #gallery {
   background-color: rgb(248, 224, 8);
 }
 section {
   padding-top: 5rem;
+}
+
+.project-img {
+  width: 100%;
+}
+#project .row > * {
+  padding: 0;
+}
+#about {
+  font-family: "Anonymous Pro", monospace;
+}
+
+.navbar {
+  font-family: "Stardos Stencil", cursive;
 }
