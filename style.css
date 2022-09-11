@@ -9,6 +9,7 @@ body {
 }
 #gallery {
   background-color: rgb(248, 224, 8);
+  font-family: "Stardos Stencil", cursive;
 }
 section {
   padding-top: 5rem;
@@ -19,6 +20,7 @@ section {
 }
 #project .row > * {
   padding: 0;
+  font-family: "Bungee Shade", cursive;
 }
 #about {
   font-family: "Anonymous Pro", monospace;
