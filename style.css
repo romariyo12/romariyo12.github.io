@@ -29,3 +29,82 @@ section {
 .navbar {
   font-family: "Stardos Stencil", cursive;
 }
+
+/* view section */
+.skull-box {
+  position: relative;
+  background-color: rgb(255, 0, 170);
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.skull-box::before {
+  content: "TWELVE";
+  position: absolute;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: "Bungee Shade", cursive;
+  left: 50%;
+  top: 40%;
+  opacity: 0;
+  transition: 0.5s
+  transform: translate(-50%, 0);
+  
+}
+
+.skull-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.5;
+}
+
+.skull-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+  font-family: "Bungee Shade", cursive;
+}
+
+.skull-box:hover .skull-name {
+  top: 20px;
+  opacity: 1;
+}
+.skull-show-button {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translate3d(0, 0, 50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.skull-box:hover .skull-show-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.skull-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 430px;
+  transition: 0.5s;
+}
+
+.skull-box:hover .skull-img {
+  transform: translate3d(-50%, -52%,100px) scale(1.2) rotate(5deg);
+}
+
+#view {
+  font-family: "Bungee Shade", cursive;
+
+}

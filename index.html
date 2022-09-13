@@ -194,6 +194,26 @@
         </div>
     </section>
     <!-- end project -->
+    <!-- view -->
+    <section id="view">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>View</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="skull-box">
+              <h4 class="skull-name">Immortal</h4>
+              <img src="img/pot/nb/no bg1.png" alt="skull1" class="skull-img">
+              <a href="#" class="btn btn-light skull-show-button">show</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end view -->
     <!-- contact -->
     <section id="contact">
       <div class="container">
@@ -310,6 +330,15 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script type="text/javascript" src="img/js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".skull-box"), {
+        max: 35,
+        speed: 400
+      });
+      
+      
     </script>
   </body>
 </html>
